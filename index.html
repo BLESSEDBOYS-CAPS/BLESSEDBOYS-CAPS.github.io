@@ -69,7 +69,7 @@ async function actualizarContador() {
     try {
 
         const respuesta = await fetch(
-            `${SUPABASE_URL}/LINKS_DE_VERIFICACION?codigo=eq.${codigoGorra}&select=*`,
+            `${SUPABASE_URL}/LINKS_DE_VERIFICACION?IDGORRA=eq.${codigoGorra}&select=*`,
             {
                 headers: {
                     "apikey": SUPABASE_KEY,
